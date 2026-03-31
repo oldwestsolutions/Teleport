@@ -16,24 +16,23 @@ export default function Home() {
         <div className="relative rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.03] to-white/[0.015] p-8 backdrop-blur-md">
           <p className="text-sm uppercase tracking-[0.2em] text-white/45">Why Teleport Exists</p>
           <p className="mt-4 max-w-5xl text-base leading-relaxed text-white/68">
-            DeFi is global, fast, and permissionless, but communication quality still determines trust.
-            Teleport introduces a shared protocol layer where users can safely coordinate across communities,
-            define interaction boundaries, and confidently avoid participants who repeatedly exhibit spam,
-            abuse, manipulation, or low-reciprocity behavior. This is infrastructure for human trust, not
-            another closed platform.
+            Access to trusted communication infrastructure should be earned through participation, not sold through
+            subscriptions. Teleport uses BELL staking to activate secure messaging, private email, and network services,
+            creating a decentralized communication layer with stronger quality and lower spam. As an Old West Solutions
+            product, Teleport is built for direct integration into partner applications and network services.
           </p>
           <div className="mt-7 grid gap-4 sm:grid-cols-3">
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
-              <p className="text-xs uppercase tracking-[0.16em] text-white/45">Safer Discovery</p>
-              <p className="mt-2 text-sm text-white/68">Identify counterparties with consistent, respectful communication habits.</p>
+              <p className="text-xs uppercase tracking-[0.16em] text-white/45">Stake-Based Access</p>
+              <p className="mt-2 text-sm text-white/68">Users stake BELL to activate communication capabilities across the network.</p>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
-              <p className="text-xs uppercase tracking-[0.16em] text-white/45">Portable Reputation</p>
-              <p className="mt-2 text-sm text-white/68">Carry communication trust context between integrated DeFi experiences.</p>
+              <p className="text-xs uppercase tracking-[0.16em] text-white/45">Premium Utility</p>
+              <p className="mt-2 text-sm text-white/68">Messaging, email, and priority routing scale with stake participation.</p>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
-              <p className="text-xs uppercase tracking-[0.16em] text-white/45">User Agency</p>
-              <p className="mt-2 text-sm text-white/68">Set who can reach you and filter participants who violate your standards.</p>
+              <p className="text-xs uppercase tracking-[0.16em] text-white/45">Network Growth</p>
+              <p className="mt-2 text-sm text-white/68">A shared token model aligns users, apps, and ecosystem expansion.</p>
             </div>
           </div>
         </div>

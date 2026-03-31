@@ -13,47 +13,56 @@ export default function ForDevelopers() {
         viewport={{ once: true }}
         className="relative rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.05] to-white/[0.02] p-10 backdrop-blur-md"
       >
-        <p className="text-sm uppercase tracking-[0.25em] text-white/45">For Developers</p>
-        <h3 className="mt-4 text-3xl font-semibold">Drop-In SDK. Instant Reputation Intelligence.</h3>
+        <p className="text-sm uppercase tracking-[0.25em] text-white/45">Use Cases + Trust</p>
+        <h3 className="mt-4 text-3xl font-semibold">Built for Real Communication Workloads</h3>
         <p className="mt-4 max-w-4xl text-white/65">
-          Integrate Teleport through lightweight SDK endpoints and begin querying portable
-          on-chain communication scores across your app surfaces in minutes. OldWest designed
-          the stack to fit existing DeFi UX without forcing product teams to rebuild their
-          messaging stack or user model.
+          Teleport is designed for secure communication at ecosystem scale, from business messaging
+          to private email routing. Offered by Old West Solutions, the protocol combines non-custodial
+          staking, privacy-first transport, and identity-aware filtering to keep network participation reliable.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Fast Integration</p>
-            <p className="mt-2 text-sm text-white/68">Simple score-read API and webhook-based updates.</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Secure Business Communication</p>
+            <p className="mt-2 text-sm text-white/68">Stake-gated channels for teams that require verified counterparties.</p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Policy Controls</p>
-            <p className="mt-2 text-sm text-white/68">App-defined thresholds for gating, routing, and moderation actions.</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Spam-Resistant Contact Systems</p>
+            <p className="mt-2 text-sm text-white/68">Stake requirements reduce unsolicited low-quality inbound traffic.</p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Portable Reputation</p>
-            <p className="mt-2 text-sm text-white/68">One interoperable score across all integrated DeFi environments.</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Web3 Identity Messaging</p>
+            <p className="mt-2 text-sm text-white/68">Wallet-linked identity and reputation improve trust in interactions.</p>
           </div>
         </div>
         <div className="mt-5 grid gap-4 sm:grid-cols-2">
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Developer Outcomes</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Private Email Infrastructure</p>
             <p className="mt-2 text-sm text-white/68">
-              Improve conversation quality, reduce moderation burden, and protect users before abuse escalates.
+              Wallet-tied private email for user-owned identity routing and secure service delivery across integrations.
             </p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Operational Reliability</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">AI + GPU Coordination</p>
             <p className="mt-2 text-sm text-white/68">
-              Built for high-throughput indexing with deterministic on-chain state anchoring for transparent audits.
+              Optional stake-gated coordination channels for AI agents and distributed compute operations.
             </p>
+          </div>
+        </div>
+        <div className="mt-5 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Non-Custodial Design</p>
+            <p className="mt-2 text-sm text-white/68">Users control their funds and stake state at all times.</p>
+          </div>
+          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Security Model</p>
+            <p className="mt-2 text-sm text-white/68">Privacy-first communication on secure infrastructure with no spam by default.</p>
           </div>
         </div>
         <a
           href="#"
           className="mt-7 inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm transition hover:border-white/40 hover:bg-white/10"
         >
-          Explore Developer Docs
+          Explore Old West Integration Docs
           <ArrowRight className="h-4 w-4" />
         </a>
       </motion.div>

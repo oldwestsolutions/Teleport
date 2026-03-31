@@ -12,38 +12,37 @@ export default function TeleToken() {
         viewport={{ once: true }}
         className="relative rounded-2xl border border-white/10 bg-white/[0.03] p-10 backdrop-blur-md"
       >
-        <p className="text-sm uppercase tracking-[0.25em] text-white/45">TELE Token</p>
-        <h3 className="mt-4 text-3xl font-semibold">Economic Primitive for Safer Communication</h3>
+        <p className="text-sm uppercase tracking-[0.25em] text-white/45">Token Utility</p>
+        <h3 className="mt-4 text-3xl font-semibold">BELL Powers the Network</h3>
         <p className="mt-4 max-w-4xl text-white/65">
-          TELE powers score queries, subnet gas, and governance across integrated DeFi applications.
-          It aligns users, apps, and protocol operators around one shared objective: reward constructive
-          behavior and reduce harmful communication patterns at internet scale.
+          BELL is the native access token of Teleport. It powers communication access, delivery
+          priority, and application-level integrations across the decentralized network.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
             <p className="text-xs uppercase tracking-[0.16em] text-white/45">Utility</p>
-            <p className="mt-2 text-sm text-white/70">Micro-fees for score reads and reputation checks.</p>
+            <p className="mt-2 text-sm text-white/70">Stake BELL to access messaging and private email services.</p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Security</p>
-            <p className="mt-2 text-sm text-white/70">Discourages spam interactions and low-quality behavior loops.</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Service Tiering</p>
+            <p className="mt-2 text-sm text-white/70">Unlock higher limits, premium features, and priority delivery.</p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Governance</p>
-            <p className="mt-2 text-sm text-white/70">Community stewards scoring weights and protocol policy upgrades.</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Integrations</p>
+            <p className="mt-2 text-sm text-white/70">Power communication integrations across apps and services.</p>
           </div>
         </div>
         <div className="mt-5 grid gap-4 sm:grid-cols-2">
           <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Incentive Integrity</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Network Growth</p>
             <p className="mt-2 text-sm text-white/70">
-              TELE-based access costs discourage manipulation and support sustainable protocol operations.
+              Staking aligns users and applications around long-term ecosystem utility and quality.
             </p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">User Sovereignty</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Access Economics</p>
             <p className="mt-2 text-sm text-white/70">
-              Participants keep control of identity linkage and can set communication permissions per app context.
+              BELL ties resource access directly to stake, replacing recurring subscription models.
             </p>
           </div>
         </div>

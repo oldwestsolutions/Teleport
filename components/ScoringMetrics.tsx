@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const metrics = [
-  { title: "Response Consistency", value: "97.2%", detail: "Stability of follow-through and timely replies over time." },
-  { title: "Conversation Depth", value: "8.4x", detail: "Quality-weighted engagement beyond one-off low-effort interactions." },
-  { title: "Reciprocity Index", value: "93/100", detail: "Mutual participation score measuring balanced value exchange." },
-  { title: "Boundary Respect", value: "95/100", detail: "Signal for honoring consent, limits, and user safety preferences." },
+  { title: "Account Activation", value: "Stake BELL", detail: "Users stake BELL to activate communication accounts and unlock protocol access." },
+  { title: "Access Dependency", value: "Unstake = Off", detail: "Unstaking removes active access to messaging, email, and priority network services." },
+  { title: "Tier Progression", value: "More Stake, More Access", detail: "Higher stake unlocks additional features, limits, and delivery priority." },
+  { title: "App Participation", value: "Apps Can Stake", detail: "Applications can also stake BELL to integrate messaging and network services." },
 ];
 
 export default function ScoringMetrics() {
@@ -20,11 +20,11 @@ export default function ScoringMetrics() {
         viewport={{ once: true }}
         className="text-center text-3xl font-semibold"
       >
-        Scoring Metrics
+        Staking Model
       </motion.h3>
       <p className="mx-auto mt-4 max-w-3xl text-center text-base leading-relaxed text-white/60">
-        Scores are not vanity numbers. They help users and apps identify reliable counterparties,
-        reduce exposure to abusive patterns, and preserve control over who can initiate interaction.
+        Teleport access is stake-based by design. Communication services are activated by BELL stake,
+        and access tiers scale with participation rather than recurring subscriptions.
       </p>
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {metrics.map((metric, idx) => (
@@ -44,15 +44,15 @@ export default function ScoringMetrics() {
       </div>
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
-          <p className="text-xs uppercase tracking-[0.16em] text-white/45">Behavior Weighting</p>
+          <p className="text-xs uppercase tracking-[0.16em] text-white/45">Predictable Access Rules</p>
           <p className="mt-2 text-sm text-white/68">
-            Protocol governance tunes category weights to reflect evolving community safety standards.
+            Access state is transparent, deterministic, and based on verifiable staking conditions.
           </p>
         </div>
         <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
-          <p className="text-xs uppercase tracking-[0.16em] text-white/45">Context-Aware Scoring</p>
+          <p className="text-xs uppercase tracking-[0.16em] text-white/45">Aligned Incentives</p>
           <p className="mt-2 text-sm text-white/68">
-            Apps can apply score windows and policy thresholds for moderation, routing, and social graph controls.
+            Stake-backed participation helps reduce spam and strengthens long-term network utility.
           </p>
         </div>
       </div>

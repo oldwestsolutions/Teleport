@@ -5,11 +5,11 @@ import AnimatedLine from "./ui/AnimatedLine";
 
 const nodes = [
   { id: "wallet", label: "User Wallet", x: 20, y: 35 },
-  { id: "mongo", label: "MongoDB Atlas", x: 160, y: 35 },
-  { id: "engine", label: "Scoring Engine", x: 300, y: 35 },
-  { id: "avax", label: "Avalanche Subnet", x: 20, y: 130 },
-  { id: "apps", label: "DeFi Apps", x: 160, y: 130 },
-  { id: "tele", label: "TELE Fee", x: 300, y: 130 },
+  { id: "mongo", label: "Stake BELL", x: 160, y: 35 },
+  { id: "engine", label: "Access Engine", x: 300, y: 35 },
+  { id: "avax", label: "Identity + Reputation", x: 20, y: 130 },
+  { id: "apps", label: "Messaging + Email", x: 160, y: 130 },
+  { id: "tele", label: "Network Priority", x: 300, y: 130 },
 ];
 
 export default function WhatIsTeleport() {
@@ -23,37 +23,36 @@ export default function WhatIsTeleport() {
         viewport={{ once: true, amount: 0.35 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-white/45">What is Teleport</p>
+        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-white/45">Decentralized Communication Network</p>
         <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">
           A Protocol. Not Just an App.
         </h2>
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/65">
-          teleport.services is a communication scoring layer across DeFi applications.
-          MongoDB Atlas captures interaction metadata, while an Avalanche subnet stores
-          portable reputation on-chain. Apps integrate through an SDK and pay TELE to
-          query scores in real time.
+          teleport.services is a staking-powered communication and messaging protocol.
+          Users stake BELL to activate secure messaging, private email, and network services
+          without relying on subscription billing.
         </p>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-white/58">
-          As a native OldWest.net product, Teleport is designed to make cross-app communication
-          safer by default. Users can define who they want to engage with, who they want to avoid,
-          and which behavior signals matter most for their risk profile.
+          As an Old West Solutions integrated product, Teleport combines decentralized identity,
+          stake-based access, and reputation signals so users and applications can communicate with
+          higher trust and stronger control over who can reach them.
         </p>
         <ul className="mt-7 space-y-3 text-sm text-white/70">
-          <li>- Behavior-first scoring that evaluates consistency, reciprocity, and trust signals.</li>
-          <li>- Privacy-preserving architecture: no message content required to produce score intelligence.</li>
-          <li>- Universal score portability so safety preferences follow the user across integrated apps.</li>
+          <li>- Stake-based access replaces subscriptions and improves network quality.</li>
+          <li>- Premium messaging and private email are unlocked through BELL participation.</li>
+          <li>- Decentralized identity and reputation are portable across Old West integrated applications.</li>
         </ul>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">User Control Layer</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Stake-Gated Access</p>
             <p className="mt-2 text-sm text-white/68">
-              Define who can initiate contact, configure trust thresholds, and enforce communication boundaries.
+              Access to messaging, email, and service tiers is unlocked through active BELL stake.
             </p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Cross-App Safety</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Network Effects</p>
             <p className="mt-2 text-sm text-white/68">
-              Safety preferences and reputational context move with users across every integrated DeFi app.
+              As more users and apps stake BELL, network trust, utility, and routing quality increase.
             </p>
           </div>
         </div>

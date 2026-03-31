@@ -32,7 +32,7 @@ export default function Hero() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="mb-5 inline-block rounded-full border border-white/15 bg-white/[0.03] px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/65"
           >
-            Native OldWest.net Product
+            Old West Solutions Integrated Product
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
@@ -40,7 +40,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-gradient text-5xl font-bold tracking-tight sm:text-6xl lg:text-6xl"
           >
-            The Communication Layer for DeFi
+            Stake to Communicate. Earn Access to the Network.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 25 }}
@@ -48,9 +48,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
             className="mt-6 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg"
           >
-            teleport.services is built by OldWest to make internet communication safer and more intentional.
-            One score. Every app. Powered by Avalanche and MongoDB so users can build trusted circles, control who
-            they interact with, and avoid repeat bad actors that exhibit harmful behavior patterns.
+            Teleport is a decentralized communication protocol where access is powered by BELL.
+            Built and offered by Old West Solutions, Teleport can be integrated across partner
+            applications to unlock secure messaging, private email, and priority network access.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -60,11 +60,11 @@ export default function Hero() {
           >
             <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
               <ShieldCheck className="mb-2 h-4 w-4 text-brandTeal" />
-              <p className="text-sm text-white/75">Behavior-aware safety controls across integrated DeFi communities.</p>
+              <p className="text-sm text-white/75">Secure, private communication with stake-based access control.</p>
             </div>
             <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
               <Users className="mb-2 h-4 w-4 text-brandBlue" />
-              <p className="text-sm text-white/75">Portable reputation to help users find reciprocal, respectful counterparties.</p>
+              <p className="text-sm text-white/75">Decentralized identity and reputation that travel across the network.</p>
             </div>
           </motion.div>
           <motion.div
@@ -77,13 +77,13 @@ export default function Hero() {
               href="#developers"
               className="rounded-md border border-white/30 px-7 py-3 text-sm font-medium transition hover:bg-white hover:text-black"
             >
-              Read the Docs
+              Start Staking BELL
             </a>
             <a
               href="#footer"
               className="rounded-md bg-gradient-to-r from-brandBlue to-brandViolet px-7 py-3 text-sm font-medium transition hover:opacity-90"
             >
-              Get Early Access
+              Access Network
             </a>
           </motion.div>
         </div>

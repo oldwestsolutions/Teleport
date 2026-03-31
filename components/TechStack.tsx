@@ -5,8 +5,8 @@ import { Check } from "lucide-react";
 
 const blocks = [
   {
-    title: "MongoDB Atlas",
-    subtitle: "Off-chain intelligence layer",
+    title: "Messaging Features",
+    subtitle: "Stake-powered communication capabilities",
     accent: "shadow-[0_0_24px_rgba(16,185,129,0.35)]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5 text-emerald-400" fill="currentColor">
@@ -15,15 +15,14 @@ const blocks = [
       </svg>
     ),
     items: [
-      "Document-based storage for message metadata and scoring analytics",
-      "No message content stored — privacy by design",
-      "Flexible schema scales as apps integrate",
-      "Real-time analytics pipeline feeding the scoring engine",
+      "Secure Messaging: End-to-end encrypted, stake-gated messaging protocol",
+      "Private Email: Custom addresses like name@teleport.services tied to wallet identity",
+      "Reputation Score: On-chain activity determines trust and visibility",
     ],
   },
   {
-    title: "Custom Avalanche Subnet",
-    subtitle: "On-chain reputation settlement layer",
+    title: "Network Features",
+    subtitle: "Access, routing, and ecosystem reach",
     accent: "shadow-[0_0_24px_rgba(248,113,113,0.35)]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5 text-red-400" fill="currentColor">
@@ -32,10 +31,9 @@ const blocks = [
       </svg>
     ),
     items: [
-      "EVM-compatible subnet purpose-built for communication scoring",
-      "TELE as native gas and governance token",
-      "Full control over transaction fees — near zero cost per score update",
-      "On-chain reputation verifiable by any integrated DeFi",
+      "Priority Routing: Higher stake means faster, prioritized communication delivery",
+      "Network Access: Stake once and access all integrated applications",
+      "Decentralized identity and reputation shared across the Teleport ecosystem",
     ],
   },
 ];
@@ -46,11 +44,11 @@ export default function TechStack() {
       <div className="grid-bg pointer-events-none absolute inset-0 opacity-15" />
       <div className="relative">
       <h2 className="text-center text-4xl font-semibold tracking-tight sm:text-5xl">
-        Built on the Best Infrastructure
+        Core Protocol Features
       </h2>
       <p className="mx-auto mt-5 max-w-3xl text-center text-base leading-relaxed text-white/60">
-        Teleport separates high-throughput behavioral processing from tamper-proof reputation
-        finality. This hybrid architecture is what makes scoring fast, affordable, and verifiable.
+        Teleport combines secure communication tooling with stake-based access rules so utility,
+        trust, and delivery quality improve as the network grows.
       </p>
       <div className="mt-12 grid gap-6 lg:grid-cols-2">
         {blocks.map((block, i) => (

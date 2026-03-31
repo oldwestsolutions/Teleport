@@ -6,22 +6,22 @@ import GlassCard from "./ui/GlassCard";
 
 const cards = [
   {
-    title: "COMMUNICATE",
+    title: "STAKE BELL",
     icon: MessageSquareShare,
     glow: "from-brandBlue to-brandBlue/0",
-    body: "Message across any integrated DeFi app. Interaction metadata — response consistency, conversation depth, reciprocity, and trust stability — is captured and stored in MongoDB Atlas. No message content. Privacy first.",
+    body: "Users stake BELL tokens to activate their communication access. Staking replaces subscriptions and aligns access directly with network participation.",
   },
   {
-    title: "SCORE",
+    title: "UNLOCK MESSAGING + EMAIL",
     icon: BrainCircuit,
     glow: "from-brandViolet to-brandViolet/0",
-    body: "Your scoring engine processes interaction metadata and writes your reputation to a smart contract on a custom Avalanche subnet. Tamper-proof. Portable. Verifiable by any integrated app.",
+    body: "Once staked, users unlock encrypted messaging, private email, and verified identity tied to wallet credentials and on-chain account state.",
   },
   {
-    title: "EARN & GOVERN",
+    title: "EARN NETWORK PRIORITY",
     icon: Gem,
     glow: "from-brandTeal to-brandTeal/0",
-    body: "Integrated apps pay a micro-fee in TELE to query your score. Better communication earns higher scores. Higher scores unlock better experiences and safer interaction filters across the DeFi ecosystem.",
+    body: "Higher stake increases delivery priority, reputation, and visibility across integrated applications, improving network quality and response reliability.",
   },
 ];
 
@@ -32,9 +32,8 @@ export default function HowItWorks() {
       <div className="relative">
       <h2 className="text-center text-4xl font-semibold tracking-tight sm:text-5xl">How It Works</h2>
       <p className="mx-auto mt-5 max-w-3xl text-center text-base leading-relaxed text-white/60">
-        Teleport converts communication quality into composable reputation infrastructure.
-        The result is a safer internet-native trust layer where users can proactively avoid
-        counterparties who repeatedly exhibit harmful or non-reciprocal behavior.
+        Teleport uses a staking-powered model where communication access is earned through BELL.
+        The system combines secure messaging, private identity, and stake-based priority into one protocol flow.
       </p>
       <div className="mt-12 grid gap-6 lg:grid-cols-3">
         {cards.map((card, idx) => {
