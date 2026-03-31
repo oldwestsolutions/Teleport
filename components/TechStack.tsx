@@ -42,7 +42,9 @@ const blocks = [
 
 export default function TechStack() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-28">
+    <section className="relative mx-auto max-w-6xl px-6 py-28">
+      <div className="grid-bg pointer-events-none absolute inset-0 opacity-15" />
+      <div className="relative">
       <h2 className="text-center text-4xl font-semibold tracking-tight sm:text-5xl">
         Built on the Best Infrastructure
       </h2>
@@ -79,6 +81,7 @@ export default function TechStack() {
             </ul>
           </motion.div>
         ))}
+      </div>
       </div>
     </section>
   );

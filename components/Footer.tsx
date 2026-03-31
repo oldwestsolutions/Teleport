@@ -1,7 +1,8 @@
 export default function Footer() {
   return (
-    <footer id="footer" className="border-t border-white/10 bg-black/40 px-6 py-14 backdrop-blur-sm">
-      <div className="mx-auto grid max-w-6xl gap-10 text-sm text-white/55 md:grid-cols-12">
+    <footer id="footer" className="relative border-t border-white/10 bg-black/40 px-6 py-14 backdrop-blur-sm">
+      <div className="grid-bg pointer-events-none absolute inset-0 opacity-10" />
+      <div className="relative mx-auto grid max-w-6xl gap-10 text-sm text-white/55 md:grid-cols-12">
         <div className="md:col-span-5">
           <p className="text-base font-semibold text-white/90">teleport.services</p>
           <p className="mt-3 max-w-md leading-relaxed">
@@ -35,7 +36,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto mt-10 flex max-w-6xl flex-col gap-2 border-t border-white/10 pt-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+      <div className="relative mx-auto mt-10 flex max-w-6xl flex-col gap-2 border-t border-white/10 pt-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
         <p>© {new Date().getFullYear()} Teleport by OldWest. All rights reserved.</p>
         <p>Built for transparent, behavior-aware internet communication.</p>
       </div>

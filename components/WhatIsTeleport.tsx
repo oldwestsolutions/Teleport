@@ -14,7 +14,9 @@ const nodes = [
 
 export default function WhatIsTeleport() {
   return (
-    <section className="mx-auto grid max-w-6xl gap-16 px-6 py-28 lg:grid-cols-2 lg:gap-24">
+    <section className="relative mx-auto max-w-6xl px-6 py-28">
+      <div className="grid-bg pointer-events-none absolute inset-0 opacity-20" />
+      <div className="relative grid gap-16 lg:grid-cols-2 lg:gap-24">
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -41,6 +43,20 @@ export default function WhatIsTeleport() {
           <li>- Privacy-preserving architecture: no message content required to produce score intelligence.</li>
           <li>- Universal score portability so safety preferences follow the user across integrated apps.</li>
         </ul>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">User Control Layer</p>
+            <p className="mt-2 text-sm text-white/68">
+              Define who can initiate contact, configure trust thresholds, and enforce communication boundaries.
+            </p>
+          </div>
+          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Cross-App Safety</p>
+            <p className="mt-2 text-sm text-white/68">
+              Safety preferences and reputational context move with users across every integrated DeFi app.
+            </p>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div
@@ -82,6 +98,7 @@ export default function WhatIsTeleport() {
           ))}
         </svg>
       </motion.div>
+      </div>
     </section>
   );
 }

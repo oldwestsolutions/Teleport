@@ -5,12 +5,13 @@ import { ArrowRight } from "lucide-react";
 
 export default function ForDevelopers() {
   return (
-    <section id="developers" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="developers" className="relative mx-auto max-w-6xl px-6 py-24">
+      <div className="grid-bg pointer-events-none absolute inset-0 opacity-15" />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.05] to-white/[0.02] p-10 backdrop-blur-md"
+        className="relative rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.05] to-white/[0.02] p-10 backdrop-blur-md"
       >
         <p className="text-sm uppercase tracking-[0.25em] text-white/45">For Developers</p>
         <h3 className="mt-4 text-3xl font-semibold">Drop-In SDK. Instant Reputation Intelligence.</h3>
@@ -32,6 +33,20 @@ export default function ForDevelopers() {
           <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
             <p className="text-xs uppercase tracking-[0.16em] text-white/45">Portable Reputation</p>
             <p className="mt-2 text-sm text-white/68">One interoperable score across all integrated DeFi environments.</p>
+          </div>
+        </div>
+        <div className="mt-5 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Developer Outcomes</p>
+            <p className="mt-2 text-sm text-white/68">
+              Improve conversation quality, reduce moderation burden, and protect users before abuse escalates.
+            </p>
+          </div>
+          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Operational Reliability</p>
+            <p className="mt-2 text-sm text-white/68">
+              Built for high-throughput indexing with deterministic on-chain state anchoring for transparent audits.
+            </p>
           </div>
         </div>
         <a

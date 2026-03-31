@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 
 export default function TeleToken() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-24">
+    <section className="relative mx-auto max-w-6xl px-6 py-24">
+      <div className="grid-bg pointer-events-none absolute inset-0 opacity-15" />
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="rounded-2xl border border-white/10 bg-white/[0.03] p-10 backdrop-blur-md"
+        className="relative rounded-2xl border border-white/10 bg-white/[0.03] p-10 backdrop-blur-md"
       >
         <p className="text-sm uppercase tracking-[0.25em] text-white/45">TELE Token</p>
         <h3 className="mt-4 text-3xl font-semibold">Economic Primitive for Safer Communication</h3>
@@ -30,6 +31,20 @@ export default function TeleToken() {
           <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
             <p className="text-xs uppercase tracking-[0.16em] text-white/45">Governance</p>
             <p className="mt-2 text-sm text-white/70">Community stewards scoring weights and protocol policy upgrades.</p>
+          </div>
+        </div>
+        <div className="mt-5 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">Incentive Integrity</p>
+            <p className="mt-2 text-sm text-white/70">
+              TELE-based access costs discourage manipulation and support sustainable protocol operations.
+            </p>
+          </div>
+          <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
+            <p className="text-xs uppercase tracking-[0.16em] text-white/45">User Sovereignty</p>
+            <p className="mt-2 text-sm text-white/70">
+              Participants keep control of identity linkage and can set communication permissions per app context.
+            </p>
           </div>
         </div>
       </motion.div>
