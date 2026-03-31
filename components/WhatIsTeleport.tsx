@@ -31,6 +31,16 @@ export default function WhatIsTeleport() {
           portable reputation on-chain. Apps integrate through an SDK and pay TELE to
           query scores in real time.
         </p>
+        <p className="mt-6 max-w-xl text-base leading-relaxed text-white/58">
+          As a native OldWest.net product, Teleport is designed to make cross-app communication
+          safer by default. Users can define who they want to engage with, who they want to avoid,
+          and which behavior signals matter most for their risk profile.
+        </p>
+        <ul className="mt-7 space-y-3 text-sm text-white/70">
+          <li>- Behavior-first scoring that evaluates consistency, reciprocity, and trust signals.</li>
+          <li>- Privacy-preserving architecture: no message content required to produce score intelligence.</li>
+          <li>- Universal score portability so safety preferences follow the user across integrated apps.</li>
+        </ul>
       </motion.div>
 
       <motion.div
@@ -40,6 +50,7 @@ export default function WhatIsTeleport() {
         transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
         className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-md"
       >
+        <p className="mb-4 text-xs uppercase tracking-[0.2em] text-white/45">Protocol Data Flow</p>
         <svg viewBox="0 0 440 190" className="h-full w-full">
           <AnimatedLine d="M 110 55 L 160 55" />
           <AnimatedLine d="M 250 55 L 300 55" />

@@ -11,7 +11,7 @@ const cards = [
     title: "COMMUNICATE",
     icon: MessageSquareShare,
     glow: "from-brandBlue to-brandBlue/0",
-    body: "Message across any integrated DeFi app. Interaction metadata — response consistency, conversation depth, reciprocity — is captured and stored in MongoDB Atlas. No message content. Privacy first.",
+    body: "Message across any integrated DeFi app. Interaction metadata — response consistency, conversation depth, reciprocity, and trust stability — is captured and stored in MongoDB Atlas. No message content. Privacy first.",
   },
   {
     title: "SCORE",
@@ -23,7 +23,7 @@ const cards = [
     title: "EARN & GOVERN",
     icon: Gem,
     glow: "from-brandTeal to-brandTeal/0",
-    body: "Integrated apps pay a micro-fee in TELE to query your score. Better communication earns higher scores. Higher scores unlock better experiences across the entire DeFi ecosystem.",
+    body: "Integrated apps pay a micro-fee in TELE to query your score. Better communication earns higher scores. Higher scores unlock better experiences and safer interaction filters across the DeFi ecosystem.",
   },
 ];
 
@@ -65,6 +65,11 @@ export default function HowItWorks() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-28">
       <h2 className="text-center text-4xl font-semibold tracking-tight sm:text-5xl">How It Works</h2>
+      <p className="mx-auto mt-5 max-w-3xl text-center text-base leading-relaxed text-white/60">
+        Teleport converts communication quality into composable reputation infrastructure.
+        The result is a safer internet-native trust layer where users can proactively avoid
+        counterparties who repeatedly exhibit harmful or non-reciprocal behavior.
+      </p>
       <div className="mt-12 grid gap-6 lg:grid-cols-3">
         {cards.map((card, idx) => {
           const Icon = card.icon;

@@ -6,6 +6,7 @@ import { Check } from "lucide-react";
 const blocks = [
   {
     title: "MongoDB Atlas",
+    subtitle: "Off-chain intelligence layer",
     accent: "shadow-[0_0_24px_rgba(16,185,129,0.35)]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5 text-emerald-400" fill="currentColor">
@@ -22,6 +23,7 @@ const blocks = [
   },
   {
     title: "Custom Avalanche Subnet",
+    subtitle: "On-chain reputation settlement layer",
     accent: "shadow-[0_0_24px_rgba(248,113,113,0.35)]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5 text-red-400" fill="currentColor">
@@ -44,6 +46,10 @@ export default function TechStack() {
       <h2 className="text-center text-4xl font-semibold tracking-tight sm:text-5xl">
         Built on the Best Infrastructure
       </h2>
+      <p className="mx-auto mt-5 max-w-3xl text-center text-base leading-relaxed text-white/60">
+        Teleport separates high-throughput behavioral processing from tamper-proof reputation
+        finality. This hybrid architecture is what makes scoring fast, affordable, and verifiable.
+      </p>
       <div className="mt-12 grid gap-6 lg:grid-cols-2">
         {blocks.map((block, i) => (
           <motion.div
@@ -62,6 +68,7 @@ export default function TechStack() {
               {block.icon}
             </div>
             <h3 className="mt-6 text-2xl font-semibold">{block.title}</h3>
+            <p className="mt-2 text-sm uppercase tracking-[0.16em] text-white/45">{block.subtitle}</p>
             <ul className="mt-7 space-y-4">
               {block.items.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-white/70">
