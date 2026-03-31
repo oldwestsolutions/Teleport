@@ -60,9 +60,7 @@ export default function TechStack() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: i * 0.1 }}
-            whileHover={{ rotateX: 2, rotateY: i === 0 ? 2 : -2, y: -4 }}
             className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-md"
-            style={{ transformStyle: "preserve-3d" }}
           >
             <div
               className={`inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 ${block.accent}`}

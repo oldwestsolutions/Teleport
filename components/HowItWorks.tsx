@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 import { MessageSquareShare, BrainCircuit, Gem } from "lucide-react";
-import type { MouseEvent } from "react";
-import { useState } from "react";
 import GlassCard from "./ui/GlassCard";
 
 const cards = [
@@ -27,40 +25,6 @@ const cards = [
   },
 ];
 
-function TiltCard({
-  children,
-  delay,
-  topGlowClassName,
-}: {
-  children: React.ReactNode;
-  delay: number;
-  topGlowClassName: string;
-}) {
-  const [rot, setRot] = useState({ x: 0, y: 0 });
-  const handleMove = (event: MouseEvent<HTMLDivElement>) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    const px = (event.clientX - rect.left) / rect.width;
-    const py = (event.clientY - rect.top) / rect.height;
-    setRot({ x: (0.5 - py) * 8, y: (px - 0.5) * 8 });
-  };
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.25 }}
-      transition={{ duration: 0.7, delay }}
-      onMouseMove={handleMove}
-      onMouseLeave={() => setRot({ x: 0, y: 0 })}
-      style={{ perspective: 1000 }}
-    >
-      <motion.div animate={{ rotateX: rot.x, rotateY: rot.y }} transition={{ duration: 0.2 }}>
-        <GlassCard topGlowClassName={topGlowClassName}>{children}</GlassCard>
-      </motion.div>
-    </motion.div>
-  );
-}
-
 export default function HowItWorks() {
   return (
     <section className="relative mx-auto max-w-6xl px-6 py-28">
@@ -76,7 +40,15 @@ export default function HowItWorks() {
         {cards.map((card, idx) => {
           const Icon = card.icon;
           return (
-            <TiltCard key={card.title} delay={idx * 0.1} topGlowClassName={card.glow}>
+            <motion.div
+              key={card.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.7, delay: idx * 0.1 }}
+              className="h-full"
+            >
+              <GlassCard topGlowClassName={card.glow} className="h-full">
               <div className="flex items-center justify-between">
                 <span className="rounded-full border border-white/20 px-3 py-1 text-xs text-white/70">
                   0{idx + 1}
@@ -85,7 +57,8 @@ export default function HowItWorks() {
               </div>
               <h3 className="mt-5 text-lg font-semibold tracking-wide">{card.title}</h3>
               <p className="mt-4 text-sm leading-relaxed text-white/65">{card.body}</p>
-            </TiltCard>
+              </GlassCard>
+            </motion.div>
           );
         })}
       </div>
